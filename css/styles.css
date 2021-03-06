@@ -56,8 +56,8 @@ hr {
   width: 50%;
   margin: auto;
 }
-h1 {
-  font-size: 450%;
+.main-heading {
+  font-size: 4.5rem;
   font-family: 'Sacramento', cursive;
   margin: 0 0 0 0;
   font-weight: bold;
@@ -277,11 +277,16 @@ width: 40%;
   z-index: 1;
   padding: 3% 3%;
   width: 80%;
-  height: 80%;
+  height: auto;
   left: 10%;
-  top: 10%;
+  top: 12%;
   display: none;
 }
+
+.info-six{
+  top: 35%;
+}
+
 .fas{
   font-size: 20px;
   position: absolute;
@@ -292,11 +297,15 @@ width: 40%;
 
 .active{
   opacity: 0.15;
+  pointer-events: none;
+}
+
+.bodyActiveProjects{
+  overflow: hidden;
 }
 
 .bodyActive{
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .email-me {
   text-align: center;
@@ -309,6 +318,7 @@ width: 40%;
 .contact {
   text-align: left;
   line-height: 2;
+  padding: 3%;
 }
 #contact-h {
   font-size: 3.5rem;
@@ -341,4 +351,110 @@ width: 40%;
   top: 35%;
   display: none;
   font: 1.5rem;
+}
+
+@media (max-width:991px) {
+  .castle{
+    width: 70% ;
+  }
+  .main-heading{
+    font-size:4rem;
+  }
+  .cloud1{
+    right: 6%;
+  }
+  .profile, .skills, .acad, .ind{
+    width: 80%;
+  }
+  .acad, .ind{
+    margin: 2% auto;
+    position: inherit;
+  }
+  .profile h2{
+    font-size: 1.5rem;
+  }
+  .profile p{
+    font-size: 1.1rem;
+  }
+  .heading{
+    font-size: 2rem;
+  }
+  .sofia{
+    width: 40%;
+    position: absolute;
+    right: 0;
+  }
+  .form{
+    width: 90%;
+    margin: auto;
+  }
+  .bodyActive{
+    overflow-Y: auto;
+  }
+  .info-text{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .castle{
+    width: 80% ;
+    margin-top: 5%;
+  }
+  .main-heading{
+    font-size:3rem;
+  }
+  .cloud1{
+    right: 3%;
+  }
+  .cloud2{
+    left: 3%;
+  }
+  .top{
+    position: relative;
+    margin-top: 8%;
+  }
+  #proimg{
+    width: 60%;
+    border-width: 5px;
+  }
+  .profile p{
+    font-size: 1rem;
+  }
+  .skill-heading{
+    font-size: 1.3rem;
+  }
+  .skills p{
+    font-size: 0.8rem;
+  }
+  .skill-rowr, .skill-rowl{
+    margin-top: 0;
+  }
+  .light1{
+    font-size: 0.8rem;
+  }
+  .experience{
+    font-size: 0.8rem;
+  }
+  .contact{
+    margin: 8%;
+  }
+  .details{
+    left: 0;
+    padding-right: 0;
+  }
+  .sof{
+    width: 90%;
+    margin-bottom: 20%;
+  }
+  .info-text{
+    width: 90%;
+    left: 5%;
+    font-size: 0.75rem;
+    top: 8%;
+  }
+  .info-six{
+    top: 35%;
+  }
 }
